@@ -1,0 +1,52 @@
+/*
+ Theme Name:   Twenty Twenty-One Child
+ Theme URI:    https://diviextended.com/
+ Description:  A child theme of Twenty Twenty-One WordPress theme.
+ Author:       Elicus Technologies
+ Author URI:   https://elicus.com
+ Template:     twentytwentyone
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+*/
+:root {
+    --global--font-size-base: 1rem; 
+    --global--font-size-xs: 0.9rem;
+    --global--font-size-sm: 1rem;
+    --global--font-size-md: 1.125rem;
+    --global--font-size-lg: 1.25rem;
+    --global--font-size-xl: 2rem;
+    --global--font-size-page-title: var(--global--font-size-xl);
+    --global--spacing-vertical: 20px;
+
+    --heading--font-size-h6: var(--global--font-size-xs);
+	--heading--font-size-h5: var(--global--font-size-sm);
+	--heading--font-size-h4: var(--global--font-size-lg);
+	--heading--font-size-h3: var(--global--font-size-lg);
+	--heading--font-size-h2: var(--global--font-size-page-title);
+	--heading--font-size-h1: var(--global--font-size-page-title);
+}
+
+@media only screen and (min-width: 482px) {
+	:root {
+		--responsive--aligndefault-width: min(calc(100vw - 4 * var(--global--spacing-horizontal)), 780px);
+	}
+}
+@media only screen and (min-width: 822px) {
+	:root {
+		--responsive--aligndefault-width: min(calc(100vw - 8 * var(--global--spacing-horizontal)), 780px);
+	}
+}
+
+@media only screen and (min-width: 0px) {
+	.entry-footer .byline {
+        display: none;
+    }
+    .entry-footer .post-taxonomies {
+        display: none;
+    }
+    .single .site-main > article > .entry-footer .byline, .single .site-main > article > .entry-footer .cat-links, .single .site-main > article > .entry-footer .tags-links {
+        display: none;
+    }
+}
+
